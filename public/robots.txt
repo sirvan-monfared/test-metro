@@ -1,0 +1,5 @@
+User-agent: *
+disallow: /cart/*
+disallow: /lara-admin/*
+disallow: /dashboard/*
+disallow: /pay/*

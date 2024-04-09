@@ -1,0 +1,63 @@
+@import url("fonts.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+    [dir="rtl"] select {
+        background-position: left 0.5rem center;
+    }
+}
+
+@layer utilities {
+    [x-cloak] {
+        display: none !important;
+    }
+
+    .mask-text {
+        -webkit-mask-image: linear-gradient(
+            #ffffff,
+            #ffffff,
+            rgba(255, 255, 255, 0)
+        );
+    }
+
+    .ltr-input {
+        direction: ltr !important;
+        text-align: center !important;
+        font-size: 18px;
+        font-family: arial, sans-serif;
+    }
+}
+
+@layer components {
+    .active {
+        @apply text-white bg-rose-500 rounded-md p-2;
+    }
+
+    .description {
+        @apply prose-p:text-lg prose-p:leading-loose prose-p:text-neutral-800 prose-p:mb-2 prose-headings:my-7 prose-headings:text-2xl prose-headings:font-bold prose-headings:text-neutral-900 prose-img:rounded-lg prose-img:max-w-full prose-img:p-1.5 prose-img:mx-auto prose-img:shadow-md prose-img:mb-4
+    }
+}

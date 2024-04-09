@@ -1,0 +1,168 @@
+@import "../plugins/global/plugins.bundle.rtl.css";
+@import "../css/style.bundle.rtl.css";
+
+.price-box,
+.price-box del,
+.price-box ins {
+    display: block;
+}
+
+.price-box del {
+    padding-left: 5px;
+    color: darkred;
+}
+
+.price-box ins {
+    text-decoration: none;
+}
+
+.verified-at {
+    display: block;
+    font-size: 10px;
+}
+
+.comments-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.comment-list-item .published-in {
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.comment-list-item .comment-item {
+    justify-content: space-between
+}
+
+.comments-list {
+    margin-bottom: 40px;
+}
+
+.comments-list .comments-list {
+    margin-right: 20px;
+}
+
+.remove-comment {
+    margin-top: auto;
+    align-self: end;
+}
+
+.remove-comment button {
+    align-self: flex-end;
+}
+
+.icon-only {
+    border: none;
+    background: none;
+}
+
+.show.menu-dropdown>.menu-sub-dropdown,
+.menu-sub-dropdown.menu.show,
+.menu-sub-dropdown.show[data-popper-placement] {
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 15px;
+}
+
+.tagify-input {
+    --tag-bg: #317CAF;
+    --tag-hover: #317CAF;
+    --tag-text-color: #FFF;
+    --tag-remove-bg: var(--tag-hover);
+}
+.faq-draggables-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq-sortable-item__wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+.faq-sortable-item {
+    flex: 1;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.faq-sortable-item__title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(201, 201, 201);
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    flex: 1;
+}
+.faq-sortable-item__title .drag-handler{
+    cursor:move;
+    color: rgb(84, 84, 84);
+}
+.faq-sortable-item__title i {
+    color: black;
+    font-size: 20px;
+}
+.faq-sortable-item__body {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.faq-sortable-item__remove, .faq-add-item {
+    background-color: rgb(200, 58, 58);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+}
+.faq-add-item {
+    background-color: rgb(94, 99, 230);
+    align-self: center;
+}
+:is(.faq-sortable-item__remove, .faq-add-item) i{
+    color: white;
+    font-size: 20px;
+}
+
+.faq-sortable-item input, .faq-sortable-item textarea {
+    width: 100%;
+    border: none;
+    background: none;
+}
+.faq-sortable-item input:focus, .faq-sortable-item textarea:focus {
+    outline: none;
+}
+.bg-emerald-400{
+    background-color:rgb(52 211 153)
+}
+.bg-sky-500 {
+	background-color: rgb(14 165 233);
+}
+.achievements-list {
+    list-style: none;
+    direction: ltr;
+}
+.achievements-list .achievement {
+    mix-blend-mode: luminosity;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.achievements-list .achievement:hover, .achievements-list .achievement.granted {
+    mix-blend-mode: unset;
+    opacity: 1;
+}
